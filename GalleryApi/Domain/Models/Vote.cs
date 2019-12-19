@@ -9,7 +9,7 @@ namespace GalleryApi.Domain.Models
         public int ArtworkId { get; set; }
         public Artwork Artwork { get; set; }
 
-        public int ApplicationUserId { get; set; }
+        public string ApplicationUserId { get; set; }
         public ApplicationUser User { get; set; }
 
     }

@@ -10,7 +10,7 @@ namespace GalleryApi.Domain.Models
         public string Description { get; set; }
         public string ImageUrl { get; set; }
 
-        public int ApplicationUserId { get; set; }
+        public string ApplicationUserId { get; set; }
         public ApplicationUser User { get; set; }
 
         public ICollection<Vote> Votes { get; set; }
