@@ -1,0 +1,17 @@
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/appsettings.Development.json
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/appsettings.json
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Properties/launchSettings.json
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/GalleryApi
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/GalleryApi.deps.json
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/GalleryApi.runtimeconfig.json
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/GalleryApi.runtimeconfig.dev.json
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/GalleryApi.dll
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/GalleryApi.pdb
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/staticwebassets/GalleryApi.StaticWebAssets.Manifest.cache
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/staticwebassets/GalleryApi.StaticWebAssets.xml
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.MvcApplicationPartsAssemblyInfo.cache
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.AssemblyInfoInputs.cache
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.AssemblyInfo.cs
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.RazorTargetAssemblyInfo.cache
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.dll
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.pdb

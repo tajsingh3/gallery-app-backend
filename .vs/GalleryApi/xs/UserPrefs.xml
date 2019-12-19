@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{AAA788FD-1721-4FEB-BA62-34EA37C88066}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Domain/Models/Artwork.cs">
+    <Files>
+      <File FileName="GalleryApi/Domain/Models/Artwork.cs" Line="17" Column="6" />
+      <File FileName="GalleryApi/Domain/Models/ApplicationUser.cs" Line="10" Column="6" />
+      <File FileName="GalleryApi/Domain/Models/Vote.cs" Line="13" Column="50" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GalleryApi" expanded="True">
+            <Node name="GalleryApi" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Domain" expanded="True">
+                <Node name="Models" expanded="True" />
+                <Node name="Repositories" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.GalleryApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
