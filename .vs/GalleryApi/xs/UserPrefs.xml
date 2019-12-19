@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Domain/Models/Artwork.cs">
     <Files>
       <File FileName="GalleryApi/Domain/Models/Artwork.cs" Line="17" Column="6" />
-      <File FileName="GalleryApi/Domain/Models/ApplicationUser.cs" Line="10" Column="6" />
-      <File FileName="GalleryApi/Domain/Models/Vote.cs" Line="13" Column="50" />
+      <File FileName="GalleryApi/Domain/Models/ApplicationUser.cs" />
+      <File FileName="GalleryApi/Domain/Models/Vote.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
