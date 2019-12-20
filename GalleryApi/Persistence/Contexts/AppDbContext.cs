@@ -21,9 +21,22 @@ namespace GalleryApi.Persistence.Contexts
         {
             base.OnModelCreating(builder);
 
-            builder.Entity<ApplicationUser>().HasData(new ApplicationUser { Id = "1", UserName = "Taj" });
+            //changing table name
+            builder.Entity<ApplicationUser>().ToTable("Users");
 
-            builder.Entity<Artwork>().HasData(new Artwork { Id = 1, Name = "dick", Description = "dick", ApplicationUserId = "1" });
+            //creating relationships
+            builder.Entity<ApplicationUser>().HasMany<Artwork>(user => user.Artworks).WithOne(a => a.User);
+            builder.Entity<ApplicationUser>().HasMany<Vote>(user => user.Votes).WithOne(v => v.User);
+            builder.Entity<Artwork>().HasMany<Vote>(a => a.Votes).WithOne(v => v.Artwork);
+
+            //making foreign keys required
+            builder.Entity<Artwork>().Property(a => a.ApplicationUserId).IsRequired();
+            builder.Entity<Vote>().Property(v => v.ApplicationUserId).IsRequired();
+            builder.Entity<Vote>().Property(v => v.ArtworkId).IsRequired();
+
+            //seeding tables
+            builder.Entity<ApplicationUser>().HasData(new ApplicationUser { Id = "1", UserName = "Taj" });
+            builder.Entity<Artwork>().HasData(new Artwork { Id = 1, Name = "Superman", Description = "My superman portrait", ApplicationUserId = "1" });
         }
     }
 }

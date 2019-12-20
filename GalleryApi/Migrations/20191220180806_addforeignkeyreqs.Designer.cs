@@ -3,14 +3,16 @@ using System;
 using GalleryApi.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GalleryApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20191220180806_addforeignkeyreqs")]
+    partial class addforeignkeyreqs
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -78,21 +80,7 @@ namespace GalleryApi.Migrations
                         .IsUnique()
                         .HasName("UserNameIndex");
 
-                    b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "1",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "9ca4711a-e35e-4f07-b8bd-331952dde47e",
-                            EmailConfirmed = false,
-                            LockoutEnabled = false,
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "a5decdc8-335d-4b79-b03e-2dd764190a63",
-                            TwoFactorEnabled = false,
-                            UserName = "Taj"
-                        });
+                    b.ToTable("AspNetUsers");
                 });
 
             modelBuilder.Entity("GalleryApi.Domain.Models.Artwork", b =>
@@ -119,15 +107,6 @@ namespace GalleryApi.Migrations
                     b.HasIndex("ApplicationUserId");
 
                     b.ToTable("Artworks");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            ApplicationUserId = "1",
-                            Description = "My superman portrait",
-                            Name = "Superman"
-                        });
                 });
 
             modelBuilder.Entity("GalleryApi.Domain.Models.Vote", b =>

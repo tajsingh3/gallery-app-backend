@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{AAA788FD-1721-4FEB-BA62-34EA37C88066}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Persistence/Contexts/AppDbContext.cs">
     <Files>
-      <File FileName="GalleryApi/Domain/Models/Artwork.cs" Line="13" Column="22" />
-      <File FileName="GalleryApi/Domain/Models/ApplicationUser.cs" Line="10" Column="1" />
+      <File FileName="GalleryApi/Domain/Models/Artwork.cs" Line="13" Column="54" />
+      <File FileName="GalleryApi/Domain/Models/ApplicationUser.cs" Line="9" Column="53" />
       <File FileName="GalleryApi/Domain/Models/Vote.cs" Line="13" Column="50" />
-      <File FileName="GalleryApi/Persistence/Contexts/AppContext.cs" Line="26" Column="128" />
       <File FileName="GalleryApi/Startup.cs" Line="36" Column="104" />
-      <File FileName="GalleryApi/appsettings.json" Line="1" Column="1" />
-      <File FileName="GalleryApi/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="GalleryApi/appsettings.json" />
+      <File FileName="GalleryApi/Properties/launchSettings.json" />
+      <File FileName="GalleryApi/Persistence/Contexts/AppDbContext.cs" Line="38" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,6 +15,9 @@
           <Node name="GalleryApi" expanded="True">
             <Node name="GalleryApi" expanded="True">
               <Node name="Dependencies" expanded="True" />
+              <Node name="Domain" expanded="True">
+                <Node name="Models" expanded="True" />
+              </Node>
               <Node name="Persistence" expanded="True">
                 <Node name="Contexts" expanded="True">
                   <Node name="AppDbContext.cs" selected="True" />
