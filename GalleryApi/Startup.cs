@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GalleryApi.Domain.Models;
+using GalleryApi.Domain.Repositories;
+using GalleryApi.Domain.Services;
 using GalleryApi.Persistence.Contexts;
+using GalleryApi.Persistence.Repositories;
+using GalleryApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,6 +38,15 @@ namespace GalleryApi
             services.AddDbContext<AppDbContext>(options => options.UseMySql(Configuration.GetConnectionString("GalleryDatabase")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+
+            services.AddScoped<IArtworkService, ArtworkService>();
+            services.AddScoped<IArtworkRepository, ArtworkRepository>();
+
+            services.AddCors(options => options.AddDefaultPolicy(
+                builder =>
+                {
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +60,8 @@ namespace GalleryApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 

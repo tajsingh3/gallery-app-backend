@@ -1149,7 +1149,7 @@
       "outputPath": "/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/tajwindersingh/.nuget/NuGet/NuGet.Config"
+        "/Users/tajwindersingh/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -1204,7 +1204,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
       }
     }
   }
