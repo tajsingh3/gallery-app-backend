@@ -1,13 +1,15 @@
 ﻿<Properties StartupConfiguration="{AAA788FD-1721-4FEB-BA62-34EA37C88066}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Persistence/Contexts/AppDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Properties/launchSettings.json">
     <Files>
-      <File FileName="GalleryApi/Domain/Models/Artwork.cs" Line="13" Column="54" />
-      <File FileName="GalleryApi/Domain/Models/ApplicationUser.cs" Line="9" Column="53" />
-      <File FileName="GalleryApi/Domain/Models/Vote.cs" Line="13" Column="50" />
-      <File FileName="GalleryApi/Startup.cs" Line="36" Column="104" />
-      <File FileName="GalleryApi/appsettings.json" />
-      <File FileName="GalleryApi/Properties/launchSettings.json" />
-      <File FileName="GalleryApi/Persistence/Contexts/AppDbContext.cs" Line="38" Column="18" />
+      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="12" Column="1" />
+      <File FileName="GalleryApi/Services/ArtworkService.cs" />
+      <File FileName="GalleryApi/Startup.cs" />
+      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" />
+      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" />
+      <File FileName="GalleryApi/Controllers/ArtworkController.cs" />
+      <File FileName="GalleryApi/Properties/launchSettings.json" Line="30" Column="2" />
+      <File FileName="GalleryApi/Controllers/ValuesController.cs" />
+      <File FileName="GalleryApi/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,15 +17,16 @@
           <Node name="GalleryApi" expanded="True">
             <Node name="GalleryApi" expanded="True">
               <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
               <Node name="Domain" expanded="True">
                 <Node name="Models" expanded="True" />
               </Node>
               <Node name="Persistence" expanded="True">
-                <Node name="Contexts" expanded="True">
-                  <Node name="AppDbContext.cs" selected="True" />
-                </Node>
+                <Node name="Contexts" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="launchSettings.json" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -34,7 +37,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/Controllers/ArtworkController.cs" relfile="GalleryApi/Controllers/ArtworkController.cs" line="27" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

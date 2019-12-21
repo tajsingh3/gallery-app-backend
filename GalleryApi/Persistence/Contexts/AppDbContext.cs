@@ -29,6 +29,10 @@ namespace GalleryApi.Persistence.Contexts
             builder.Entity<ApplicationUser>().HasMany<Vote>(user => user.Votes).WithOne(v => v.User);
             builder.Entity<Artwork>().HasMany<Vote>(a => a.Votes).WithOne(v => v.Artwork);
 
+            //auto generate primary keys
+            builder.Entity<Artwork>().Property(a => a.Id).ValueGeneratedOnAdd();
+            builder.Entity<Vote>().Property(v => v.Id).ValueGeneratedOnAdd();
+
             //making foreign keys required
             builder.Entity<Artwork>().Property(a => a.ApplicationUserId).IsRequired();
             builder.Entity<Vote>().Property(v => v.ApplicationUserId).IsRequired();
