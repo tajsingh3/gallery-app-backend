@@ -14,7 +14,7 @@
         "outputPath": "/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/tajwindersingh/.config/NuGet/NuGet.Config"
+          "/Users/tajwindersingh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -36,6 +36,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.0.0, )"
