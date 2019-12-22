@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using GalleryApi.Domain.Models;
 using GalleryApi.Domain.Repositories;
 using GalleryApi.Domain.Services;
@@ -42,11 +43,8 @@ namespace GalleryApi
             services.AddScoped<IArtworkService, ArtworkService>();
             services.AddScoped<IArtworkRepository, ArtworkRepository>();
 
-            services.AddCors(options => options.AddDefaultPolicy(
-                builder =>
-                {
-                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-                }));
+            services.AddAutoMapper(typeof(Startup));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,8 +58,6 @@ namespace GalleryApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseCors();
 
             app.UseAuthorization();
 

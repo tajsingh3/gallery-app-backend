@@ -1,5 +1,6 @@
 ﻿using System;
 using GalleryApi.Domain.Models;
+using GalleryApi.Extensions;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -39,8 +40,9 @@ namespace GalleryApi.Persistence.Contexts
             builder.Entity<Vote>().Property(v => v.ArtworkId).IsRequired();
 
             //seeding tables
-            builder.Entity<ApplicationUser>().HasData(new ApplicationUser { Id = "1", UserName = "Taj" });
-            builder.Entity<Artwork>().HasData(new Artwork { Id = 1, Name = "Superman", Description = "My superman portrait", ApplicationUserId = "1" });
+            //builder.Entity<ApplicationUser>().HasData(new ApplicationUser { Id = "1", UserName = "Taj" });
+            //builder.Entity<Artwork>().HasData(new Artwork { Id = 1, Name = "Superman", Description = "My superman portrait", ApplicationUserId = "1" });
+            builder.Seed();
         }
     }
 }

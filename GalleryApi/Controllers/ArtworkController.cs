@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using GalleryApi.Domain.Models;
 using GalleryApi.Domain.Services;
+using GalleryApi.Resources;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -14,10 +16,12 @@ namespace GalleryApi.Controllers
     public class ArtworkController : Controller
     {
         private readonly IArtworkService artworkService;
+        private readonly IMapper mapper;
 
-        public ArtworkController(IArtworkService artworkService)
+        public ArtworkController(IArtworkService artworkService, IMapper mapper)
         {
             this.artworkService = artworkService;
+            this.mapper = mapper;
         }
 
         // GET: api/values
@@ -27,10 +31,13 @@ namespace GalleryApi.Controllers
             return new string[] { "value1", "value2" };
         }
 
-        [HttpGet("communityart")]
-        public async Task<IEnumerable<Artwork>> GetCommunityArt()
+        [HttpGet("community")]
+        public async Task<IEnumerable<ArtworkResource>> GetCommunityArt()
         {
-            return await artworkService.CommunityArtworkListAsync();
+            var artworkList = await artworkService.CommunityArtworkListAsync();
+            var artworkResourceList = mapper.Map<IEnumerable<Artwork>, IEnumerable<ArtworkResource>>(artworkList);
+
+            return artworkResourceList;
         }
 
         // GET api/values/5

@@ -85,11 +85,11 @@ namespace GalleryApi.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "538bdb90-df04-4120-8375-9994cc6d753d",
+                            ConcurrencyStamp = "8b6c6e68-f2f9-4a74-9b6f-c1baeb057ef2",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "555e2f31-320f-4f52-80a8-59d2af605e9f",
+                            SecurityStamp = "82635833-d67b-4ebf-8bfa-ec50b3872a47",
                             TwoFactorEnabled = false,
                             UserName = "Taj"
                         });

@@ -20,7 +20,7 @@
     "GalleryApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "api/artwork/community",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
