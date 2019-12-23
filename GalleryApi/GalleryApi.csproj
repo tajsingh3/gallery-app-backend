@@ -19,6 +19,7 @@
     <Folder Include="Extensions\" />
     <Folder Include="Mapping\" />
     <Folder Include="Resources\" />
+    <Folder Include="Domain\Services\Communication\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.0" />
