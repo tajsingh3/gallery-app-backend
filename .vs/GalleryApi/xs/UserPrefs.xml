@@ -1,6 +1,7 @@
 ﻿<Properties StartupConfiguration="{AAA788FD-1721-4FEB-BA62-34EA37C88066}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Persistence/Contexts/AppDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Controllers/ArtworkController.cs">
     <Files>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="12" Column="1" />
       <File FileName="GalleryApi/Services/ArtworkService.cs" />
@@ -20,6 +21,14 @@
       <File FileName="GalleryApi/Extensions/DatabaseSeed.cs" Line="9" Column="29" />
       <File FileName="GalleryApi/Persistence/Contexts/AppDbContext.cs" Line="44" Column="155" />
 >>>>>>> art-service
+=======
+      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="50" Column="40" />
+      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" Line="11" Column="71" />
+      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" Line="21" Column="66" />
+      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="10" Column="75" />
+      <File FileName="GalleryApi/Services/ArtworkService.cs" Line="24" Column="22" />
+      <File FileName="GalleryApi/Extensions/DatabaseSeed.cs" Line="12" Column="250" />
+>>>>>>> art-service
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,13 +36,16 @@
           <Node name="GalleryApi" expanded="True">
             <Node name="GalleryApi" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ArtworkController.cs" selected="True" />
+              </Node>
               <Node name="Domain" expanded="True">
                 <Node name="Models" expanded="True" />
               </Node>
               <Node name="Extensions" expanded="True" />
               <Node name="Mapping" expanded="True" />
               <Node name="Persistence" expanded="True">
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <Node name="Contexts" expanded="True" />
               </Node>
@@ -44,6 +56,9 @@
                 <Node name="Contexts" expanded="True">
                   <Node name="AppDbContext.cs" selected="True" />
                 </Node>
+=======
+                <Node name="Contexts" expanded="True" />
+>>>>>>> art-service
                 <Node name="Repositories" expanded="True" />
               </Node>
               <Node name="Properties" expanded="True" />

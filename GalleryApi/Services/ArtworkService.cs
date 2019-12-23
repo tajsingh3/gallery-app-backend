@@ -18,7 +18,12 @@ namespace GalleryApi.Services
 
         public async Task<IEnumerable<Artwork>> CommunityArtworkListAsync()
         {
-            return await artworkRepository.CommunityArtListAsync();
+            return await artworkRepository.CommunityArtworkListAsync();
+        }
+
+        public async Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId)
+        {
+            return await artworkRepository.MyArtListAsync(userId);
         }
     }
 }

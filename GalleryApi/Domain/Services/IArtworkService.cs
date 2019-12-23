@@ -7,5 +7,7 @@ namespace GalleryApi.Domain.Services
     public interface IArtworkService
     {
         public Task<IEnumerable<Artwork>> CommunityArtworkListAsync();
+        public Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId);
+
     }
 }

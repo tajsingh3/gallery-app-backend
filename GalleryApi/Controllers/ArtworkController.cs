@@ -40,12 +40,22 @@ namespace GalleryApi.Controllers
             return artworkResourceList;
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+
+        [HttpGet("{userId}")]
+        public async Task<IEnumerable<ArtworkResource>> GetMyArt(string userId)
         {
-            return "value";
+            var artworkList = await artworkService.MyArtworkListAsync(userId);
+            var artworkResourceList = mapper.Map<IEnumerable<Artwork>, IEnumerable<ArtworkResource>>(artworkList);
+
+            return artworkResourceList;
         }
+
+        // GET api/values/5
+        //[HttpGet("{id}")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
         // POST api/values
         [HttpPost]
