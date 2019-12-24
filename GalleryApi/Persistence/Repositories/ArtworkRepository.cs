@@ -21,9 +21,14 @@ namespace GalleryApi.Persistence.Repositories
             return await context.Artworks.ToListAsync<Artwork>();
         }
 
-        public async Task<IEnumerable<Artwork>> MyArtListAsync(string userId)
+        public async Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId)
         {
             return await context.Artworks.Where(a => a.ApplicationUserId.Equals(userId)).ToListAsync<Artwork>();
+        }
+
+        public async Task AddAsync(Artwork artwork)
+        {
+            await context.Artworks.AddAsync(artwork);
         }
     }
 }

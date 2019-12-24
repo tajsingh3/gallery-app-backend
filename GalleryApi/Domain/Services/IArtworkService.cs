@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using GalleryApi.Domain.Models;
+using GalleryApi.Domain.Services.Communication;
 
 namespace GalleryApi.Domain.Services
 {
@@ -8,6 +9,7 @@ namespace GalleryApi.Domain.Services
     {
         public Task<IEnumerable<Artwork>> CommunityArtworkListAsync();
         public Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId);
+        public Task<ArtworkResponse> SaveArtworkAsync(Artwork artwork);
 
     }
 }

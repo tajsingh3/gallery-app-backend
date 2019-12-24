@@ -1,4 +1,5 @@
 ﻿<Properties StartupConfiguration="{AAA788FD-1721-4FEB-BA62-34EA37C88066}|Default">
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Controllers/ArtworkController.cs">
     <Files>
 <<<<<<< HEAD
@@ -30,21 +31,30 @@
       <File FileName="GalleryApi/Extensions/DatabaseSeed.cs" Line="12" Column="250" />
 >>>>>>> art-service
     </Files>
+=======
+  <MonoDevelop.Ide.Workbench>
+>>>>>>> art-service
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GalleryApi" expanded="True">
             <Node name="GalleryApi" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="ArtworkController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Domain" expanded="True">
                 <Node name="Models" expanded="True" />
+<<<<<<< HEAD
+=======
+                <Node name="Repositories" expanded="True" />
+                <Node name="Services" expanded="True">
+                  <Node name="Communication" expanded="True" />
+                </Node>
+>>>>>>> art-service
               </Node>
               <Node name="Extensions" expanded="True" />
               <Node name="Mapping" expanded="True" />
               <Node name="Persistence" expanded="True">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 <Node name="Contexts" expanded="True" />
@@ -58,6 +68,11 @@
                 </Node>
 =======
                 <Node name="Contexts" expanded="True" />
+>>>>>>> art-service
+=======
+                <Node name="Contexts" expanded="True">
+                  <Node name="AppDbContext.cs" selected="True" />
+                </Node>
 >>>>>>> art-service
                 <Node name="Repositories" expanded="True" />
               </Node>
@@ -75,9 +90,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint enabled="false" file="/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/Controllers/ArtworkController.cs" relfile="GalleryApi/Controllers/ArtworkController.cs" line="31" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

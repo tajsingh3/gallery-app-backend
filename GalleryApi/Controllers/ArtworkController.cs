@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using GalleryApi.Domain.Models;
 using GalleryApi.Domain.Services;
+using GalleryApi.Domain.Services.Communication;
 using GalleryApi.Resources;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,13 +23,6 @@ namespace GalleryApi.Controllers
         {
             this.artworkService = artworkService;
             this.mapper = mapper;
-        }
-
-        // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
         }
 
         [HttpGet("community")]
@@ -50,17 +44,27 @@ namespace GalleryApi.Controllers
             return artworkResourceList;
         }
 
-        // GET api/values/5
-        //[HttpGet("{id}")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
+        [HttpPost("{userId}")]
+        public async Task<IActionResult> PostAsync(string userId, [FromBody]SaveArtworkResource saveArtworkResource)
         {
+            //modelstate.isvalid handed by apicontroller
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("invalid request data was sent");
+            }
+
+            Artwork artwork = mapper.Map<SaveArtworkResource, Artwork>(saveArtworkResource);
+            artwork.ApplicationUserId = userId;
+            ArtworkResponse artworkResponse = await artworkService.SaveArtworkAsync(artwork);
+
+            if (!artworkResponse.Success)
+            {
+                return BadRequest(artworkResponse.Message);
+            }
+
+            ArtworkResource artworkResource = mapper.Map<Artwork, ArtworkResource>(artworkResponse.Resource);
+            return Ok(artworkResource);
+
         }
 
         // PUT api/values/5

@@ -8,7 +8,9 @@ namespace GalleryApi.Domain.Repositories
     public interface IArtworkRepository
     {
         public Task<IEnumerable<Artwork>> CommunityArtworkListAsync();
-        public Task<IEnumerable<Artwork>> MyArtListAsync(string userId);
+        public Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId);
+        public Task AddAsync(Artwork artwork);
+
 
     }
 }
