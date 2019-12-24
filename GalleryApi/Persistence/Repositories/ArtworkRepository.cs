@@ -40,5 +40,10 @@ namespace GalleryApi.Persistence.Repositories
         {
             context.Artworks.Update(artwork);
         }
+
+        public void Delete(Artwork artwork)
+        {
+            context.Artworks.Remove(artwork);
+        }
     }
 }

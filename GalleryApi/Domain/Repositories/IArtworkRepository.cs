@@ -12,5 +12,6 @@ namespace GalleryApi.Domain.Repositories
         public Task AddAsync(Artwork artwork);
         public Task<Artwork> FindByIdAsync(int id);
         public void Update(Artwork artwork);
+        public void Delete(Artwork artwork);
     }
 }
