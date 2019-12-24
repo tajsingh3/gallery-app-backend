@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{AAA788FD-1721-4FEB-BA62-34EA37C88066}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Controllers/ArtworkController.cs">
     <Files>
-      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="87" Column="38" />
-      <File FileName="GalleryApi/Resources/ArtworkResource.cs" Line="6" Column="9" />
-      <File FileName="GalleryApi/Services/ArtworkService.cs" Line="66" Column="1" />
-      <File FileName="GalleryApi/Mapping/ResourceToModelProfile.cs" Line="13" Column="29" />
+      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="91" Column="29" />
+      <File FileName="GalleryApi/Resources/ArtworkResource.cs" />
+      <File FileName="GalleryApi/Services/ArtworkService.cs" Line="77" Column="49" />
+      <File FileName="GalleryApi/Mapping/ResourceToModelProfile.cs" />
       <File FileName="GalleryApi/Domain/Services/Communication/ArtworkResponse.cs" Line="1" Column="1" />
-      <File FileName="GalleryApi/Domain/Services/Communication/BaseResponse.cs" Line="1" Column="1" />
-      <File FileName="GalleryApi/Mapping/ModelToResourceProfile.cs" Line="1" Column="1" />
+      <File FileName="GalleryApi/Domain/Services/Communication/BaseResponse.cs" />
+      <File FileName="GalleryApi/Mapping/ModelToResourceProfile.cs" />
+      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" Line="14" Column="45" />
+      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" Line="46" Column="46" />
+      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="14" Column="63" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,9 +24,7 @@
               <Node name="Domain" expanded="True">
                 <Node name="Models" expanded="True" />
                 <Node name="Repositories" expanded="True" />
-                <Node name="Services" expanded="True">
-                  <Node name="Communication" expanded="True" />
-                </Node>
+                <Node name="Services" expanded="True" />
               </Node>
               <Node name="Extensions" expanded="True" />
               <Node name="Mapping" expanded="True" />

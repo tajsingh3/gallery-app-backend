@@ -67,7 +67,7 @@ namespace GalleryApi.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut("{artworkId}")]
+        [HttpPut("update/{artworkId}")]
         public async Task<IActionResult> PutAsync(int artworkId, [FromBody]UpdateArtworkResource updateArtworkResource)
         {
             if (!ModelState.IsValid)
@@ -88,9 +88,19 @@ namespace GalleryApi.Controllers
         }
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("delete/{artworkId}")]
+        public async Task<IActionResult> DeleteAsync(int artworkId)
         {
+            ArtworkResponse artworkResponse = await artworkService.DeleteArtworkAsync(artworkId);
+
+            if (!artworkResponse.Success)
+            {
+                return BadRequest(artworkResponse.Message);
+            }
+
+            ArtworkResource artworkResource = mapper.Map<Artwork, ArtworkResource>(artworkResponse.Resource);
+
+            return Ok(artworkResource);
         }
     }
 }

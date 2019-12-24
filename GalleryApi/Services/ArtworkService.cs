@@ -71,5 +71,27 @@ namespace GalleryApi.Services
             }
 
         }
+
+        public async Task<ArtworkResponse> DeleteArtworkAsync(int id)
+        {
+            Artwork existingArtwork = await artworkRepository.FindByIdAsync(id);
+
+            if (existingArtwork == null)
+            {
+                return new ArtworkResponse("Artwork does not exist");
+            }
+
+            try
+            {
+                artworkRepository.Delete(existingArtwork);
+                await unitOfWork.CompleteAsync();
+
+                return new ArtworkResponse(existingArtwork);
+            }
+            catch (Exception ex)
+            {
+                return new ArtworkResponse($"An error occured while deleting artwork {ex.Message}");
+            }
+        }
     }
 }

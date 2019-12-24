@@ -7,6 +7,8 @@
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/GalleryApi.runtimeconfig.dev.json
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/GalleryApi.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/GalleryApi.pdb
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/AutoMapper.dll
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Microsoft.Bcl.HashCode.dll
@@ -42,6 +44,3 @@
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.csproj.CopyComplete
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.pdb
-/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.csprojAssemblyReference.cache
-/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/AutoMapper.dll
-/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
