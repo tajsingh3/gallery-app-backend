@@ -1,12 +1,23 @@
 ﻿<Properties StartupConfiguration="{AAA788FD-1721-4FEB-BA62-34EA37C88066}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Controllers/ArtworkController.cs">
+    <Files>
+      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="87" Column="38" />
+      <File FileName="GalleryApi/Resources/ArtworkResource.cs" Line="6" Column="9" />
+      <File FileName="GalleryApi/Services/ArtworkService.cs" Line="66" Column="1" />
+      <File FileName="GalleryApi/Mapping/ResourceToModelProfile.cs" Line="13" Column="29" />
+      <File FileName="GalleryApi/Domain/Services/Communication/ArtworkResponse.cs" Line="1" Column="1" />
+      <File FileName="GalleryApi/Domain/Services/Communication/BaseResponse.cs" Line="1" Column="1" />
+      <File FileName="GalleryApi/Mapping/ModelToResourceProfile.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GalleryApi" expanded="True">
             <Node name="GalleryApi" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ArtworkController.cs" selected="True" />
+              </Node>
               <Node name="Domain" expanded="True">
                 <Node name="Models" expanded="True" />
                 <Node name="Repositories" expanded="True" />
@@ -17,9 +28,7 @@
               <Node name="Extensions" expanded="True" />
               <Node name="Mapping" expanded="True" />
               <Node name="Persistence" expanded="True">
-                <Node name="Contexts" expanded="True">
-                  <Node name="AppDbContext.cs" selected="True" />
-                </Node>
+                <Node name="Contexts" expanded="True" />
                 <Node name="Repositories" expanded="True" />
               </Node>
               <Node name="Properties" expanded="True" />

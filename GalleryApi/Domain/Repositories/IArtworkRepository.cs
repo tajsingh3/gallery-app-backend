@@ -10,7 +10,7 @@ namespace GalleryApi.Domain.Repositories
         public Task<IEnumerable<Artwork>> CommunityArtworkListAsync();
         public Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId);
         public Task AddAsync(Artwork artwork);
-
-
+        public Task<Artwork> FindByIdAsync(int id);
+        public void Update(Artwork artwork);
     }
 }

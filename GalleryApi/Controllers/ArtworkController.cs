@@ -47,10 +47,9 @@ namespace GalleryApi.Controllers
         [HttpPost("{userId}")]
         public async Task<IActionResult> PostAsync(string userId, [FromBody]SaveArtworkResource saveArtworkResource)
         {
-            //modelstate.isvalid handed by apicontroller
             if (!ModelState.IsValid)
             {
-                return BadRequest("invalid request data was sent");
+                return BadRequest("invalid post request data was sent");
             }
 
             Artwork artwork = mapper.Map<SaveArtworkResource, Artwork>(saveArtworkResource);
@@ -68,9 +67,24 @@ namespace GalleryApi.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPut("{artworkId}")]
+        public async Task<IActionResult> PutAsync(int artworkId, [FromBody]UpdateArtworkResource updateArtworkResource)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("invalid update request data was sent");
+            }
+
+            Artwork artwork = mapper.Map<UpdateArtworkResource, Artwork>(updateArtworkResource);
+            ArtworkResponse artworkResponse = await artworkService.UpdateArtworkAsync(artworkId, artwork);
+
+            if (!artworkResponse.Success)
+            {
+                return BadRequest(artworkResponse.Message);
+            }
+
+            ArtworkResource artworkResource = mapper.Map<Artwork, ArtworkResource>(artworkResponse.Resource);
+            return Ok(artworkResource);
         }
 
         // DELETE api/values/5

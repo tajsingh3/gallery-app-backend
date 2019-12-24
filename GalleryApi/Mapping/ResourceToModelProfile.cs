@@ -10,6 +10,8 @@ namespace GalleryApi.Mapping
         public ResourceToModelProfile()
         {
             CreateMap<SaveArtworkResource, Artwork>();
+            CreateMap<UpdateArtworkResource, Artwork>();
+
         }
     }
 }
