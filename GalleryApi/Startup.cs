@@ -42,6 +42,7 @@ namespace GalleryApi
 
             services.AddScoped<IArtworkService, ArtworkService>();
             services.AddScoped<IArtworkRepository, ArtworkRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddAutoMapper(typeof(Startup));
 
