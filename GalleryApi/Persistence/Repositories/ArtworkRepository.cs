@@ -30,5 +30,15 @@ namespace GalleryApi.Persistence.Repositories
         {
             await context.Artworks.AddAsync(artwork);
         }
+
+        public async Task<Artwork> FindByIdAsync(int id)
+        {
+            return await context.Artworks.FindAsync(id);
+        }
+
+        public void Update(Artwork artwork)
+        {
+            context.Artworks.Update(artwork);
+        }
     }
 }

@@ -43,5 +43,33 @@ namespace GalleryApi.Services
                 return new ArtworkResponse($"An error occured while saving artwork {ex.Message}");
             }
         }
+
+        public async Task<ArtworkResponse> UpdateArtworkAsync(int id, Artwork artwork)
+        {
+            Artwork existingArtwork = await artworkRepository.FindByIdAsync(id);
+
+            if (existingArtwork == null)
+            {
+                return new ArtworkResponse("Artwork does not exist");
+            }
+
+            existingArtwork.Name = artwork.Name;
+            existingArtwork.Description = artwork.Description;
+            existingArtwork.ImageUrl = artwork.ImageUrl;
+
+            try
+            {
+                artworkRepository.Update(existingArtwork);
+                await unitOfWork.CompleteAsync();
+
+                return new ArtworkResponse(existingArtwork);
+
+            }
+            catch (Exception ex)
+            {
+                return new ArtworkResponse($"An error occured while updating artwork {ex.Message}");
+            }
+
+        }
     }
 }
