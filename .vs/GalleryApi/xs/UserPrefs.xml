@@ -38,16 +38,23 @@
 =======
   <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Controllers/ArtworkController.cs">
     <Files>
-      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="91" Column="29" />
-      <File FileName="GalleryApi/Resources/ArtworkResource.cs" />
-      <File FileName="GalleryApi/Services/ArtworkService.cs" Line="77" Column="49" />
+      <File FileName="GalleryApi/Domain/Models/Queries/Query.cs" Line="22" Column="14" />
+      <File FileName="GalleryApi/Domain/Models/Queries/QueryResult.cs" Line="1" Column="1" />
+      <File FileName="GalleryApi/Domain/Models/Queries/ArtworkQuery.cs" />
+      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="1" Column="1" />
+      <File FileName="GalleryApi/Resources/QueryResource.cs" />
       <File FileName="GalleryApi/Mapping/ResourceToModelProfile.cs" />
-      <File FileName="GalleryApi/Domain/Services/Communication/ArtworkResponse.cs" Line="1" Column="1" />
-      <File FileName="GalleryApi/Domain/Services/Communication/BaseResponse.cs" />
+      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" />
+      <File FileName="GalleryApi/Services/ArtworkService.cs" />
+      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" />
+      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" />
       <File FileName="GalleryApi/Mapping/ModelToResourceProfile.cs" />
-      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" Line="14" Column="45" />
-      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" Line="46" Column="46" />
-      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="14" Column="63" />
+      <File FileName="GalleryApi/Extensions/DatabaseSeed.cs" />
+      <File FileName="GalleryApi/Persistence/Contexts/AppDbContext.cs" />
+      <File FileName="GalleryApi/Program.cs" Line="26" Column="1" />
+      <File FileName="GalleryApi/appsettings.json" />
+      <File FileName="GalleryApi/Startup.cs" />
+      <File FileName="GalleryApi/Resources/QueryResultResource.cs" Line="1" Column="1" />
     </Files>
 >>>>>>> art-service
     <Pads>
@@ -60,9 +67,15 @@
                 <Node name="ArtworkController.cs" selected="True" />
               </Node>
               <Node name="Domain" expanded="True">
+<<<<<<< HEAD
                 <Node name="Models" expanded="True" />
 <<<<<<< HEAD
 =======
+=======
+                <Node name="Models" expanded="True">
+                  <Node name="Queries" expanded="True" />
+                </Node>
+>>>>>>> art-service
                 <Node name="Repositories" expanded="True" />
 <<<<<<< HEAD
                 <Node name="Services" expanded="True">

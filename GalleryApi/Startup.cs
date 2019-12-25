@@ -38,6 +38,8 @@ namespace GalleryApi
 
             services.AddDbContext<AppDbContext>(options => options.UseMySql(Configuration.GetConnectionString("GalleryDatabase")));
 
+
+
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
             services.AddScoped<IArtworkService, ArtworkService>();

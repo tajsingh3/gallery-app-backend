@@ -1,6 +1,7 @@
 ﻿using System;
 using AutoMapper;
 using GalleryApi.Domain.Models;
+using GalleryApi.Domain.Models.Queries;
 using GalleryApi.Resources;
 
 namespace GalleryApi.Mapping
@@ -11,6 +12,8 @@ namespace GalleryApi.Mapping
         {
             CreateMap<SaveArtworkResource, Artwork>();
             CreateMap<UpdateArtworkResource, Artwork>();
+            CreateMap<QueryResource, Query>();
+
 
         }
     }

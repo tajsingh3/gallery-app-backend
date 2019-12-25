@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using GalleryApi.Domain.Models;
+using GalleryApi.Domain.Models.Queries;
 using GalleryApi.Domain.Repositories;
 using GalleryApi.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
@@ -15,10 +16,19 @@ namespace GalleryApi.Persistence.Repositories
         {
         }
 
-        public async Task<IEnumerable<Artwork>> CommunityArtworkListAsync()
-        {
+        //public async Task<IEnumerable<Artwork>> CommunityArtworkListAsync()
+        //{
 
-            return await context.Artworks.ToListAsync<Artwork>();
+        //    return await context.Artworks.ToListAsync<Artwork>();
+        //}
+        public async Task<QueryResult<Artwork>> CommunityArtworkListAsync(Query query)
+        {
+            var queryable = context.Artworks;
+
+            int totalItems = await queryable.CountAsync();
+            var artworks = await queryable.Skip<Artwork>((query.Page - 1) * query.ItemsPerPage).Take<Artwork>(query.ItemsPerPage).ToListAsync();
+
+            return new QueryResult<Artwork> { Items = artworks, TotalItems = totalItems };
         }
 
         public async Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId)
