@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using GalleryApi.Domain.Models;
+using GalleryApi.Domain.Models.Queries;
 using GalleryApi.Domain.Repositories;
 using GalleryApi.Domain.Services;
 using GalleryApi.Domain.Services.Communication;
@@ -19,9 +20,13 @@ namespace GalleryApi.Services
             this.unitOfWork = unitOfWork;
         }
 
-        public async Task<IEnumerable<Artwork>> CommunityArtworkListAsync()
+        //public async Task<IEnumerable<Artwork>> CommunityArtworkListAsync()
+        //{
+        //    return await artworkRepository.CommunityArtworkListAsync();
+        //}
+        public async Task<QueryResult<Artwork>> CommunityArtworkListAsync(Query query)
         {
-            return await artworkRepository.CommunityArtworkListAsync();
+            return await artworkRepository.CommunityArtworkListAsync(query);
         }
 
         public async Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId)

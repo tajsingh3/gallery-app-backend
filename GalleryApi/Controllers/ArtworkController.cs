@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using GalleryApi.Domain.Models;
+using GalleryApi.Domain.Models.Queries;
 using GalleryApi.Domain.Services;
 using GalleryApi.Domain.Services.Communication;
 using GalleryApi.Resources;
@@ -25,13 +26,23 @@ namespace GalleryApi.Controllers
             this.mapper = mapper;
         }
 
-        [HttpGet("community")]
-        public async Task<IEnumerable<ArtworkResource>> GetCommunityArt()
-        {
-            var artworkList = await artworkService.CommunityArtworkListAsync();
-            var artworkResourceList = mapper.Map<IEnumerable<Artwork>, IEnumerable<ArtworkResource>>(artworkList);
+        //[HttpGet("community")]
+        //public async Task<IEnumerable<ArtworkResource>> GetCommunityArt()
+        //{
+        //    var artworkList = await artworkService.CommunityArtworkListAsync();
+        //    var artworkResourceList = mapper.Map<IEnumerable<Artwork>, IEnumerable<ArtworkResource>>(artworkList);
 
-            return artworkResourceList;
+        //    return artworkResourceList;
+        //}
+        [HttpGet("community")]
+        public async Task<QueryResultResource<ArtworkResource>> GetCommunityArt([FromQuery]QueryResource query)
+        {
+            var artworkQuery = mapper.Map<QueryResource, Query>(query);
+            var queryResult = await artworkService.CommunityArtworkListAsync(artworkQuery);
+
+            var artworkResource = mapper.Map<QueryResult<Artwork>, QueryResultResource<ArtworkResource>>(queryResult);
+
+            return artworkResource;
         }
 
 
