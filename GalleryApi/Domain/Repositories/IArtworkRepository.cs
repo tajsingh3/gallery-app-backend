@@ -11,7 +11,9 @@ namespace GalleryApi.Domain.Repositories
         //public Task<IEnumerable<Artwork>> CommunityArtworkListAsync();
         public Task<QueryResult<Artwork>> CommunityArtworkListAsync(Query query);
 
-        public Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId);
+        //public Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId);
+        public Task<QueryResult<Artwork>> MyArtworkListAsync(string userId, Query query);
+
         public Task AddAsync(Artwork artwork);
         public Task<Artwork> FindByIdAsync(int id);
         public void Update(Artwork artwork);

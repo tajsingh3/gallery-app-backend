@@ -26,14 +26,29 @@ namespace GalleryApi.Persistence.Repositories
             var queryable = context.Artworks;
 
             int totalItems = await queryable.CountAsync();
-            var artworks = await queryable.Skip<Artwork>((query.Page - 1) * query.ItemsPerPage).Take<Artwork>(query.ItemsPerPage).ToListAsync();
+
+            var artworks = await queryable.Skip<Artwork>((query.Page - 1) * query.ItemsPerPage)
+                                          .Take<Artwork>(query.ItemsPerPage)
+                                          .ToListAsync();
 
             return new QueryResult<Artwork> { Items = artworks, TotalItems = totalItems };
         }
 
-        public async Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId)
+        //public async Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId)
+        //{
+        //    return await context.Artworks.Where(a => a.ApplicationUserId.Equals(userId)).ToListAsync<Artwork>();
+        //}
+        public async Task<QueryResult<Artwork>> MyArtworkListAsync(string userId, Query query)
         {
-            return await context.Artworks.Where(a => a.ApplicationUserId.Equals(userId)).ToListAsync<Artwork>();
+            var queryable = context.Artworks;
+
+            int totalItems = await queryable.Where(a => a.ApplicationUserId.Equals(userId)).CountAsync();
+
+            var artworks = await queryable.Where(a => a.ApplicationUserId.Equals(userId))
+                                    .Skip<Artwork>((query.Page - 1) * query.ItemsPerPage)
+                                    .Take<Artwork>(query.ItemsPerPage).ToListAsync();
+
+            return new QueryResult<Artwork> { Items = artworks, TotalItems = totalItems };
         }
 
         public async Task AddAsync(Artwork artwork)

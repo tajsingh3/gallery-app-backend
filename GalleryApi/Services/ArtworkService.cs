@@ -29,9 +29,13 @@ namespace GalleryApi.Services
             return await artworkRepository.CommunityArtworkListAsync(query);
         }
 
-        public async Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId)
+        //public async Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId)
+        //{
+        //    return await artworkRepository.MyArtworkListAsync(userId);
+        //}
+        public async Task<QueryResult<Artwork>> MyArtworkListAsync(string userId, Query query)
         {
-            return await artworkRepository.MyArtworkListAsync(userId);
+            return await artworkRepository.MyArtworkListAsync(userId, query);
         }
 
         public async Task<ArtworkResponse> SaveArtworkAsync(Artwork artwork)
