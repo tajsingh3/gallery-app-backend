@@ -38,23 +38,15 @@
 =======
   <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Controllers/ArtworkController.cs">
     <Files>
-      <File FileName="GalleryApi/Domain/Models/Queries/Query.cs" Line="22" Column="14" />
-      <File FileName="GalleryApi/Domain/Models/Queries/QueryResult.cs" />
-      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="66" Column="35" />
-      <File FileName="GalleryApi/Resources/QueryResource.cs" />
-      <File FileName="GalleryApi/Mapping/ResourceToModelProfile.cs" />
-      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="16" Column="1" />
-      <File FileName="GalleryApi/Services/ArtworkService.cs" Line="38" Column="56" />
-      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" Line="51" Column="89" />
-      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" Line="15" Column="32" />
-      <File FileName="GalleryApi/Mapping/ModelToResourceProfile.cs" />
-      <File FileName="GalleryApi/Extensions/DatabaseSeed.cs" />
-      <File FileName="GalleryApi/Persistence/Contexts/AppDbContext.cs" />
-      <File FileName="GalleryApi/Program.cs" />
-      <File FileName="GalleryApi/appsettings.json" />
-      <File FileName="GalleryApi/Startup.cs" Line="41" Column="1" />
-      <File FileName="GalleryApi/Resources/QueryResultResource.cs" />
-      <File FileName="GalleryApi/Domain/Models/Artwork.cs" Line="1" Column="1" />
+      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="192" Column="44" />
+      <File FileName="GalleryApi/Resources/SaveArtworkResource.cs" />
+      <File FileName="GalleryApi/Helpers/ImageFileCreator.cs" />
+      <File FileName="GalleryApi/Startup.cs" />
+      <File FileName="GalleryApi/Resources/UpdateArtworkResource.cs" Line="17" Column="53" />
+      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" Line="1" Column="1" />
+      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="17" Column="28" />
+      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" Line="49" Column="42" />
+      <File FileName="GalleryApi/Services/ArtworkService.cs" Line="108" Column="26" />
     </Files>
 >>>>>>> art-service
     <Pads>
@@ -62,13 +54,9 @@
         <State name="__root__">
           <Node name="GalleryApi" expanded="True">
             <Node name="GalleryApi" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="ArtworkController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Domain" expanded="True">
+<<<<<<< HEAD
 <<<<<<< HEAD
                 <Node name="Models" expanded="True" />
 <<<<<<< HEAD
@@ -77,6 +65,8 @@
                 <Node name="Models" expanded="True">
                   <Node name="Queries" expanded="True" />
                 </Node>
+>>>>>>> art-service
+=======
 >>>>>>> art-service
                 <Node name="Repositories" expanded="True" />
 <<<<<<< HEAD
@@ -88,9 +78,9 @@
                 <Node name="Services" expanded="True" />
 >>>>>>> art-service
               </Node>
-              <Node name="Extensions" expanded="True" />
-              <Node name="Mapping" expanded="True" />
+              <Node name="Helpers" expanded="True" />
               <Node name="Persistence" expanded="True">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -115,11 +105,16 @@
 =======
                 <Node name="Contexts" expanded="True" />
 >>>>>>> art-service
+=======
+>>>>>>> art-service
                 <Node name="Repositories" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True" />
               <Node name="Services" expanded="True" />
+<<<<<<< HEAD
+>>>>>>> art-service
+=======
+              <Node name="wwwroot" expanded="True" />
 >>>>>>> art-service
             </Node>
           </Node>

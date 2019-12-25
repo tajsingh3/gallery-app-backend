@@ -14,6 +14,8 @@ namespace GalleryApi.Domain.Services
         //public Task<IEnumerable<Artwork>> MyArtworkListAsync(string userId);
         public Task<QueryResult<Artwork>> MyArtworkListAsync(string userId, Query query);
 
+        public Task<Artwork> FindArtworkByIdAsync(int artworkId);
+
         public Task<ArtworkResponse> SaveArtworkAsync(Artwork artwork);
         public Task<ArtworkResponse> UpdateArtworkAsync(int id, Artwork artwork);
         public Task<ArtworkResponse> DeleteArtworkAsync(int id);
