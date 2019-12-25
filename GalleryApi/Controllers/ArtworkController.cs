@@ -46,13 +46,24 @@ namespace GalleryApi.Controllers
         }
 
 
-        [HttpGet("{userId}")]
-        public async Task<IEnumerable<ArtworkResource>> GetMyArt(string userId)
-        {
-            var artworkList = await artworkService.MyArtworkListAsync(userId);
-            var artworkResourceList = mapper.Map<IEnumerable<Artwork>, IEnumerable<ArtworkResource>>(artworkList);
+        //[HttpGet("{userId}")]
+        //public async Task<IEnumerable<ArtworkResource>> GetMyArt(string userId)
+        //{
+        //    var artworkList = await artworkService.MyArtworkListAsync(userId);
+        //    var artworkResourceList = mapper.Map<IEnumerable<Artwork>, IEnumerable<ArtworkResource>>(artworkList);
 
-            return artworkResourceList;
+        //    return artworkResourceList;
+        //}
+
+        [HttpGet("{userId}")]
+        public async Task<QueryResultResource<ArtworkResource>> GetMyArt(string userId, [FromQuery]QueryResource query)
+        {
+            var artworkQuery = mapper.Map<QueryResource, Query>(query);
+            var queryResult = await artworkService.MyArtworkListAsync(userId, artworkQuery);
+
+            var artworkResource = mapper.Map<QueryResult<Artwork>, QueryResultResource<ArtworkResource>>(queryResult);
+
+            return artworkResource;
         }
 
         [HttpPost("{userId}")]

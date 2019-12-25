@@ -15,6 +15,7 @@
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.InMemory.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Caching.Abstractions.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/bin/Debug/netcoreapp3.0/Microsoft.Extensions.Caching.Memory.dll

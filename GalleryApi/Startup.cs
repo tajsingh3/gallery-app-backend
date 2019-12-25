@@ -36,9 +36,8 @@ namespace GalleryApi
         {
             services.AddControllers();
 
-            services.AddDbContext<AppDbContext>(options => options.UseMySql(Configuration.GetConnectionString("GalleryDatabase")));
-
-
+            //services.AddDbContext<AppDbContext>(options => options.UseMySql(Configuration.GetConnectionString("GalleryDatabase")));
+            services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase(Configuration.GetConnectionString("memory")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 
