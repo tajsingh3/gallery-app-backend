@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
 
 namespace GalleryApi.Resources
 {
@@ -11,8 +12,11 @@ namespace GalleryApi.Resources
         [Required]
         public string Description { get; set; }
 
+        //[Required]
+        //public string ImageUrl { get; set; }
+
         [Required]
-        public string ImageUrl { get; set; }
+        public IFormFile ImageFile { get; set; }
 
     }
 }

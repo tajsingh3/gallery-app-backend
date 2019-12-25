@@ -102,5 +102,10 @@ namespace GalleryApi.Services
                 return new ArtworkResponse($"An error occured while deleting artwork {ex.Message}");
             }
         }
+
+        public async Task<Artwork> FindArtworkByIdAsync(int artworkId)
+        {
+            return await artworkRepository.FindByIdAsync(artworkId);
+        }
     }
 }

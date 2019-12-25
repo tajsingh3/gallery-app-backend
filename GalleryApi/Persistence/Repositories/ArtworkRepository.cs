@@ -45,8 +45,8 @@ namespace GalleryApi.Persistence.Repositories
             int totalItems = await queryable.Where(a => a.ApplicationUserId.Equals(userId)).CountAsync();
 
             var artworks = await queryable.Where(a => a.ApplicationUserId.Equals(userId))
-                                    .Skip<Artwork>((query.Page - 1) * query.ItemsPerPage)
-                                    .Take<Artwork>(query.ItemsPerPage).ToListAsync();
+                                          .Skip<Artwork>((query.Page - 1) * query.ItemsPerPage)
+                                          .Take<Artwork>(query.ItemsPerPage).ToListAsync();
 
             return new QueryResult<Artwork> { Items = artworks, TotalItems = totalItems };
         }
