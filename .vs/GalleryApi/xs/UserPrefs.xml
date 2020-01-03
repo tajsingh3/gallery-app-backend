@@ -1,39 +1,5 @@
 ﻿<Properties StartupConfiguration="{AAA788FD-1721-4FEB-BA62-34EA37C88066}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Controllers/ArtworkController.cs">
-    <Files>
-      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="192" Column="44" />
-      <File FileName="GalleryApi/Resources/SaveArtworkResource.cs" />
-      <File FileName="GalleryApi/Helpers/ImageFileCreator.cs" />
-      <File FileName="GalleryApi/Startup.cs" />
-      <File FileName="GalleryApi/Resources/UpdateArtworkResource.cs" Line="17" Column="53" />
-      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" Line="1" Column="1" />
-      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="17" Column="28" />
-      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" Line="49" Column="42" />
-      <File FileName="GalleryApi/Services/ArtworkService.cs" Line="108" Column="26" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="GalleryApi" expanded="True">
-            <Node name="GalleryApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Domain" expanded="True">
-                <Node name="Repositories" expanded="True" />
-                <Node name="Services" expanded="True" />
-              </Node>
-              <Node name="Helpers" expanded="True" />
-              <Node name="Persistence" expanded="True">
-                <Node name="Repositories" expanded="True" />
-              </Node>
-              <Node name="Resources" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="wwwroot" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.ItemProperties.GalleryApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
