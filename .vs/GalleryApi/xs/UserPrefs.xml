@@ -1,6 +1,7 @@
 ﻿<Properties StartupConfiguration="{AAA788FD-1721-4FEB-BA62-34EA37C88066}|Default">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Controllers/ArtworkController.cs">
     <Files>
 <<<<<<< HEAD
@@ -122,6 +123,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+=======
+  <MonoDevelop.Ide.Workbench />
+>>>>>>> art-service
   <MonoDevelop.Ide.ItemProperties.GalleryApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
