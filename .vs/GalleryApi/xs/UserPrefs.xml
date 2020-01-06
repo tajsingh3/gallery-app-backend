@@ -1,131 +1,33 @@
 ﻿<Properties StartupConfiguration="{AAA788FD-1721-4FEB-BA62-34EA37C88066}|Default">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Controllers/ArtworkController.cs">
     <Files>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="12" Column="1" />
-      <File FileName="GalleryApi/Services/ArtworkService.cs" />
-      <File FileName="GalleryApi/Startup.cs" />
-      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" />
-      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" />
-      <File FileName="GalleryApi/Controllers/ArtworkController.cs" />
-      <File FileName="GalleryApi/Properties/launchSettings.json" Line="30" Column="2" />
-      <File FileName="GalleryApi/Controllers/ValuesController.cs" />
-      <File FileName="GalleryApi/appsettings.json" Line="1" Column="1" />
-=======
-      <File FileName="GalleryApi/Mapping/ModelToResourceProfile.cs" Line="13" Column="47" />
-      <File FileName="GalleryApi/Resources/ArtworkResource.cs" Line="9" Column="45" />
-      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="37" Column="80" />
-      <File FileName="GalleryApi/Startup.cs" Line="1" Column="1" />
-      <File FileName="GalleryApi/Properties/launchSettings.json" Line="23" Column="42" />
-      <File FileName="GalleryApi/Extensions/DatabaseSeed.cs" Line="9" Column="29" />
-      <File FileName="GalleryApi/Persistence/Contexts/AppDbContext.cs" Line="44" Column="155" />
->>>>>>> art-service
-=======
-      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="50" Column="40" />
-      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" Line="11" Column="71" />
-      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" Line="21" Column="66" />
-      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="10" Column="75" />
-      <File FileName="GalleryApi/Services/ArtworkService.cs" Line="24" Column="22" />
-      <File FileName="GalleryApi/Extensions/DatabaseSeed.cs" Line="12" Column="250" />
->>>>>>> art-service
+      <File FileName="GalleryApi/Controllers/UserController.cs" Line="54" Column="20" />
+      <File FileName="GalleryApi/Startup.cs" Line="124" Column="37" />
+      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="36" Column="24" />
     </Files>
-=======
-  <MonoDevelop.Ide.Workbench>
->>>>>>> art-service
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="GalleryApi/Controllers/ArtworkController.cs">
-    <Files>
-      <File FileName="GalleryApi/Controllers/ArtworkController.cs" Line="192" Column="44" />
-      <File FileName="GalleryApi/Resources/SaveArtworkResource.cs" />
-      <File FileName="GalleryApi/Helpers/ImageFileCreator.cs" />
-      <File FileName="GalleryApi/Startup.cs" />
-      <File FileName="GalleryApi/Resources/UpdateArtworkResource.cs" Line="17" Column="53" />
-      <File FileName="GalleryApi/Domain/Repositories/IArtworkRepository.cs" Line="1" Column="1" />
-      <File FileName="GalleryApi/Domain/Services/IArtworkService.cs" Line="17" Column="28" />
-      <File FileName="GalleryApi/Persistence/Repositories/ArtworkRepository.cs" Line="49" Column="42" />
-      <File FileName="GalleryApi/Services/ArtworkService.cs" Line="108" Column="26" />
-    </Files>
->>>>>>> art-service
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GalleryApi" expanded="True">
             <Node name="GalleryApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ArtworkController.cs" selected="True" />
+              </Node>
               <Node name="Domain" expanded="True">
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <Node name="Models" expanded="True" />
-<<<<<<< HEAD
-=======
-=======
-                <Node name="Models" expanded="True">
-                  <Node name="Queries" expanded="True" />
-                </Node>
->>>>>>> art-service
-=======
->>>>>>> art-service
-                <Node name="Repositories" expanded="True" />
-<<<<<<< HEAD
                 <Node name="Services" expanded="True">
                   <Node name="Communication" expanded="True" />
                 </Node>
->>>>>>> art-service
-=======
-                <Node name="Services" expanded="True" />
->>>>>>> art-service
               </Node>
               <Node name="Helpers" expanded="True" />
-              <Node name="Persistence" expanded="True">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <Node name="Contexts" expanded="True" />
-              </Node>
-              <Node name="Properties" expanded="True">
-                <Node name="launchSettings.json" selected="True" />
-              </Node>
-=======
-                <Node name="Contexts" expanded="True">
-                  <Node name="AppDbContext.cs" selected="True" />
-                </Node>
-=======
-                <Node name="Contexts" expanded="True" />
->>>>>>> art-service
-=======
-                <Node name="Contexts" expanded="True">
-                  <Node name="AppDbContext.cs" selected="True" />
-                </Node>
->>>>>>> art-service
-=======
-                <Node name="Contexts" expanded="True" />
->>>>>>> art-service
-=======
->>>>>>> art-service
-                <Node name="Repositories" expanded="True" />
-              </Node>
               <Node name="Resources" expanded="True" />
               <Node name="Services" expanded="True" />
-<<<<<<< HEAD
->>>>>>> art-service
-=======
-              <Node name="wwwroot" expanded="True" />
->>>>>>> art-service
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-=======
-  <MonoDevelop.Ide.Workbench />
->>>>>>> art-service
   <MonoDevelop.Ide.ItemProperties.GalleryApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

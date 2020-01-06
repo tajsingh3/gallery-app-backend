@@ -9,6 +9,7 @@ using GalleryApi.Domain.Models.Queries;
 using GalleryApi.Domain.Services;
 using GalleryApi.Domain.Services.Communication;
 using GalleryApi.Resources;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using static GalleryApi.Helpers.ImageFileCreator;
@@ -17,6 +18,7 @@ using static GalleryApi.Helpers.ImageFileCreator;
 
 namespace GalleryApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     public class ArtworkController : Controller
     {
@@ -31,14 +33,7 @@ namespace GalleryApi.Controllers
             this.env = env;
         }
 
-        //[HttpGet("community")]
-        //public async Task<IEnumerable<ArtworkResource>> GetCommunityArt()
-        //{
-        //    var artworkList = await artworkService.CommunityArtworkListAsync();
-        //    var artworkResourceList = mapper.Map<IEnumerable<Artwork>, IEnumerable<ArtworkResource>>(artworkList);
-
-        //    return artworkResourceList;
-        //}
+        [AllowAnonymous]
         [HttpGet("community")]
         public async Task<QueryResultResource<ArtworkResource>> GetCommunityArt([FromQuery]QueryResource query)
         {
@@ -50,16 +45,6 @@ namespace GalleryApi.Controllers
             return artworkResource;
         }
 
-
-        //[HttpGet("{userId}")]
-        //public async Task<IEnumerable<ArtworkResource>> GetMyArt(string userId)
-        //{
-        //    var artworkList = await artworkService.MyArtworkListAsync(userId);
-        //    var artworkResourceList = mapper.Map<IEnumerable<Artwork>, IEnumerable<ArtworkResource>>(artworkList);
-
-        //    return artworkResourceList;
-        //}
-
         [HttpGet("{userId}")]
         public async Task<QueryResultResource<ArtworkResource>> GetMyArt(string userId, [FromQuery]QueryResource query)
         {
@@ -70,28 +55,6 @@ namespace GalleryApi.Controllers
 
             return artworkResource;
         }
-
-        //[HttpPost("{userId}")]
-        //public async Task<IActionResult> PostAsync(string userId, [FromBody]SaveArtworkResource saveArtworkResource)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest("invalid post request data was sent");
-        //    }
-
-        //    Artwork artwork = mapper.Map<SaveArtworkResource, Artwork>(saveArtworkResource);
-        //    artwork.ApplicationUserId = userId;
-        //    ArtworkResponse artworkResponse = await artworkService.SaveArtworkAsync(artwork);
-
-        //    if (!artworkResponse.Success)
-        //    {
-        //        return BadRequest(artworkResponse.Message);
-        //    }
-
-        //    ArtworkResource artworkResource = mapper.Map<Artwork, ArtworkResource>(artworkResponse.Resource);
-        //    return Ok(artworkResource);
-
-        //}
 
         [HttpPost("{userId}")]
         public async Task<IActionResult> PostAsync(string userId, [FromForm]SaveArtworkResource saveArtworkResource)
@@ -126,35 +89,9 @@ namespace GalleryApi.Controllers
 
         }
 
-        // PUT api/values/5
-        //[HttpPut("update/{artworkId}")]
-        //public async Task<IActionResult> PutAsync(int artworkId, [FromBody]UpdateArtworkResource updateArtworkResource)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest("invalid update request data was sent");
-        //    }
-
-        //    Artwork artwork = mapper.Map<UpdateArtworkResource, Artwork>(updateArtworkResource);
-        //    ArtworkResponse artworkResponse = await artworkService.UpdateArtworkAsync(artworkId, artwork);
-
-        //    if (!artworkResponse.Success)
-        //    {
-        //        return BadRequest(artworkResponse.Message);
-        //    }
-
-        //    ArtworkResource artworkResource = mapper.Map<Artwork, ArtworkResource>(artworkResponse.Resource);
-        //    return Ok(artworkResource);
-        //}
-
         [HttpPut("update/{artworkId}")]
         public async Task<IActionResult> PutAsync(int artworkId, [FromForm]UpdateArtworkResource updateArtworkResource)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest("invalid update request data was sent");
-            //}
-
             Artwork existingArtwork = await artworkService.FindArtworkByIdAsync(artworkId);
 
             if (existingArtwork == null)
