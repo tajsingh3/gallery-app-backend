@@ -32,10 +32,7 @@ namespace GalleryApi.Controllers
                 return BadRequest("user account could not be created");
             }
 
-            string token = await authenticationService.Authenticate(signupResource.Email, signupResource.Password);
-            if (token == null) return BadRequest("Jwt Token could not be created");
-
-            return Ok(new { Username = signupResource.Email, Token = token });
+            return Ok(new { AccountCreated = true });
         }
 
         [HttpPost("login")]
@@ -48,14 +45,6 @@ namespace GalleryApi.Controllers
 
             return Ok(new { UserName = loginResource.Email, Token = token });
 
-        }
-
-        // GET: api/values
-        [Authorize]
-        [HttpGet("test")]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
         }
 
     }
