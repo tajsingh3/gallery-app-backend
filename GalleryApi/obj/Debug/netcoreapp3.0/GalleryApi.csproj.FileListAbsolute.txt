@@ -52,3 +52,4 @@
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.csproj.CopyComplete
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.dll
 /Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.pdb
+/Users/tajwindersingh/Projects/GalleryApi/GalleryApi/obj/Debug/netcoreapp3.0/GalleryApi.csprojAssemblyReference.cache
